@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-repeat:no-repeat;
+                background-color: green;
+                background-image:
+                    linear-gradient(to top, rgb(202, 230, 255), rgb(110,175,233)),
+                    linear-gradient(to right, rgb(63, 63, 63), rgb(63,63,63));
+                background-position:
+                    0 0px,
+                    0 250px;
+                background-size:
+                    100% 250px,
+                    100% 200px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            #dynamImg {
+                position:absolute;
+                transform:matrix(1,0,0,1,0,0); /*( scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() )*/
+                left:-200px;
+                top: 100px;
+            }
+            p {
+                position:absolute;
+                left: 300px;
+                top: 100px;
+                font-weight:bold;
+                text-align:center;
+                /*background-color: white;*/
+            }
+            #lane_line {
+                position:absolute;
+                top: 325px;
+                left: 0px;
+                width: 100%;
+                height:3px;
+                border-width:0px;
+                background-color:yellow;
+            }
+        </style>
+        <title>Mr. Moto</title>
+    </head>
+    <body>
+        <p>
+        &nbsp;<!Mr. Moto's text goes here>
+        </p>
+        <div>
+            <img id="dynamImg" src=moto.png alt="moto" height="200" width="auto" onclick="main();" style="cursor:pointer" />
+        </div>
+        <hr id="lane_line">
+        <script type="text/javascript" src="js/interact.js"></script>
+    </body>
+
+</html>
